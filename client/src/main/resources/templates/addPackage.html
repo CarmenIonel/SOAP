@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Add Package</title>
+</head>
+<body>
+<div>
+
+    <h1>Add Package</h1>
+
+    <form th:action="addPackage" th:method="post">
+        <div><input type="text" name="sender" id="sender" placeholder="Sender" required="required" /></div>
+        <div><input type="text" name="receiver" id="receiver" placeholder="Receiver" required="required" /></div>
+        <div><input type="text" name="name" id="name" placeholder="Name" required="required"/></div>
+        <div><input type="text" name="description" id="description" placeholder="Description" required="required" /></div>
+        <div><input type="text" name="sCity" id="sCity" placeholder="Sender City" required="required"/></div>
+        <div><input type="datetime-local" name="stime" id="stime" placeholder="Departure Time" required="required"/></div>
+        <div><input type="text" name="dCity" id="dCity" placeholder="Destination City" required="required" /></div>
+        <div><input type="datetime-local" name="dtime" id="dtime" placeholder="Arrival Time" required="required"/></div>
+
+        <button type="submit" name="action" value="add">Add Package</button>
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Update status</title>
+</head>
+<body>
+<div class="form">
+
+    <h1>Update status</h1>
+
+    <form th:action="@{/updateStatus}" th:method="post">
+
+        <div><input type="text" name="name" id="name" placeholder="Search by name" required="required"/></div>
+        <div><input type="text" name="city" id="city" placeholder="City" required="required"/></div>
+        <div><input type="datetime-local" name="time" id="time" placeholder="Arrival Time" required="required"/></div>
+
+        <button type="submit" name="action" value="update">Update status</button>
+    </form>
+
+</div>
+</body>
+</html>

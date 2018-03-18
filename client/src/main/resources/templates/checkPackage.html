@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Check status</title>
+</head>
+<body>
+<div class="form">
+
+    <h1>Check Status</h1>
+
+    <form th:action="@{/checkPackage}" th:method="post">
+        <div><input type="text" name="name" id="name" placeholder="Name" required="required"/></div>
+
+        <button type="submit" name="action" value="check">Check Status</button>
+    </form>
+
+</div>
+
+<form th:action="@{/checkPackage}" th:method="get">
+    <p th:text="${pack}"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Search</title>
+</head>
+<body>
+
+<div class="form">
+
+    <h1>Register Package</h1>
+
+    <form th:action="@{/searchPackage}" th:method="post">
+        <div><input type="text" name="name" id="name" placeholder="Name" required="required"/></div>
+
+        <button type="submit" name="action" value="search">Search Package</button>
+    </form>
+
+</div>
+
+<form th:action="@{/searchPackage}" th:method="get">
+    <p th:text="${pack}"></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Delete Package</title>
+</head>
+<body>
+<div class="form">
+
+    <h1>Delete Package</h1>
+
+    <form th:action="@{/deletePackage}" th:method="post">
+        <div><input type="text" name="name" id="name" placeholder="Search by name" required="required"/></div>
+
+        <button type="submit" name="action" value="delete">Delete Package</button>
+    </form>
+
+</div>
+</body>
+</html>

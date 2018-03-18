@@ -1,0 +1,5 @@
+2017-12-13 20:23:08,911 WARN  [DefaultSoapUICore] Missing folder [C:\Users\Carmen\ext] for external libraries
+2017-12-13 20:23:10,083 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Carmen\soapui-settings.xml]
+2017-12-13 20:23:11,755 INFO  [WorkspaceImpl] Loading workspace from [C:\Users\Carmen\intellij-soapui-workspace.xml]
+2017-12-13 20:25:47,804 INFO  [WorkspaceImpl] Saved workspace to [C:\Users\Carmen\intellij-soapui-workspace.xml]
+2017-12-13 20:25:47,804 INFO  [DefaultSoapUICore] Settings saved to [C:\Users\Carmen\soapui-settings.xml]

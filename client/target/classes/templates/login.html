@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Login</title>
+</head>
+
+<body>
+<div class="form">
+    <div th:if="${param.error}" align="center">
+        Invalid credentials! Please check again.
+    </div>
+    <header class="login-header"><span class="text">Login</span><span class="loader"></span></header>
+    <form class="login-form" th:action="@{/login}" method="post">
+        <div><input class="login-input" name="user" type="text" placeholder="Username"/></div>
+        <div><input class="login-input" name="pass" type="password" placeholder="Password"/></div>
+        <button class="login-btn" type="submit">Login</button>
+    </form>
+
+    <div>
+        <a th:href="@{/register}"><button class="login-btn">Register</button></a>
+    </div>
+
+</div>
+</body>
+</html>
